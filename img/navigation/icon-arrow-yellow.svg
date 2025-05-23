@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.6 21.6">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fae023;
+      }
+    </style>
+  </defs>
+  <g id="MENU">
+    <g>
+      <path class="cls-1" d="M20.94,21.6h-2.23c-.36,0-.66-.29-.66-.66V4.2c0-.36-.29-.66-.66-.66H.66C.29,3.54,0,3.25,0,2.89V.66C0,.29.29,0,.66,0h20.28c.36,0,.66.29.66.66v20.28c0,.36-.29.66-.66.66Z"/>
+      <rect class="cls-1" x="-2.81" y="9.37" width="26.51" height="3.54" rx=".66" ry=".66" transform="translate(-4.82 10.65) rotate(-45)"/>
+    </g>
+  </g>
+</svg>

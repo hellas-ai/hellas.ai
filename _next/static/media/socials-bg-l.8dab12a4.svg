@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 910.6 488.74">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#radial-gradient-4);
+      }
+
+      .cls-2 {
+        fill: url(#radial-gradient-3);
+      }
+
+      .cls-3 {
+        fill: url(#radial-gradient-2);
+      }
+
+      .cls-4 {
+        fill: url(#radial-gradient);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="1079.93" cy="273.21" fx="1079.93" fy="273.21" r="747.14" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fae023"/>
+      <stop offset="1" stop-color="#ffffa6"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="1079.93" fx="1079.93" r="747.14" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-3" r="747.14" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-4" r="747.14" xlink:href="#radial-gradient"/>
+  </defs>
+  <g id="CATGRAD">
+    <g>
+      <path class="cls-4" d="M910.6,300.83h-390.83c-11.57,0-22.63-4.95-30.34-13.57l-93.52-104.65c-23.48-26.27-57.15-41.34-92.38-41.34H0s0,28.35,0,28.35h303.53c27.17,0,53.14,11.62,71.24,31.88l93.52,104.65c13.08,14.64,31.84,23.03,51.47,23.03h390.83"/>
+      <path class="cls-3" d="M910.6,159.57h-390.83c-11.57,0-22.63-4.95-30.34-13.58l-93.52-104.65C372.43,15.07,338.77,0,303.53,0H0s0,28.35,0,28.35h303.53c27.17,0,53.14,11.62,71.24,31.88l93.52,104.65c13.08,14.64,31.84,23.03,51.47,23.03h390.83"/>
+      <path class="cls-2" d="M0,347.48h303.53c35.23,0,68.9-15.07,92.38-41.34l93.52-104.65c7.71-8.63,18.77-13.57,30.34-13.57h390.83s0-28.35,0-28.35h-390.83c-19.63,0-38.39,8.39-51.47,23.03l-93.52,104.65c-18.11,20.26-44.07,31.88-71.24,31.88H0s0,28.35,0,28.35Z"/>
+      <path class="cls-1" d="M0,488.74h303.53c35.23,0,68.9-15.07,92.38-41.34l93.52-104.65c7.71-8.63,18.77-13.58,30.34-13.58h390.83s0-28.35,0-28.35h-390.83c-19.63,0-38.39,8.4-51.47,23.03l-93.52,104.65c-18.11,20.26-44.07,31.88-71.24,31.88H0s0,28.35,0,28.35Z"/>
+    </g>
+  </g>
+</svg>
