@@ -1,0 +1,55 @@
+Careers @ Hellas.
+
+Our process is simple: we read code you've written and research you've
+published, then interview you about it. We don't do tedious coding tests.
+
+We have 2 open roles:
+
+PROTOCOL ENGINEER
+================================================================================
+
+  Hellas is building a distributed marketplace for buying and selling trustless AI compute.
+
+  We're looking for a Lead Researcher/Engineer with knowledge of BFT consensus
+  mechanisms, distributed systems, zk proof aggregation. 
+
+  * Experience in designing and implementing BFT consensus protocols
+  * Ability to engage with academic literature on distributed systems
+  * Understanding of ZK proofs and proof aggregation (you don't need to design
+    these, but you should know how to use them)
+
+  If you have project(s) demonstrating your experience in one or more of these
+  areas, get in touch!
+
+  Nice-to-have: interest or experience in:
+
+  * Deep Learning / ML / AI, GPU programming 
+  * Compilers and array programming languages 
+  * Category Theory and string diagrams
+
+  Email us at hiring@hellas.ai with subject "PROTOCOL ENGINEER"
+
+
+COMPILER ENGINEER
+================================================================================
+
+  Hellas is hiring a compiler engineer/applied category theorist/GPU programmer.
+
+  You should have either professional experience or published papers on one of
+  the following topics, and familiarity/interest in all three:
+
+  1. PL/compilers
+  2. GPU / data-parallel datastructures/algorithms
+  3. Applied category theory
+
+  You will contribute to *catgrad*, our categorical deep learning compiler.
+  Example tasks include:
+
+  - compiler optimizations
+  - Implementing hypergraph rewriting algorithms
+  - Implementing new CPU/GPU backends
+  - Designing new language features
+
+  Email us at hiring@hellas.ai with subject "COMPILER ENGINEER",
+  and include evidence of your experience in the three topics above.
+
