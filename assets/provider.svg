@@ -1,0 +1,356 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 166" width="300" height="166">
+  <title>Compute provider, an isometric cutaway</title>
+  <style>
+  .assembly { --edge: #5e83f1; --trace: #4876ed; --metal: #a3bded; --fin: #334d8e; --light: #6ba9fe; }
+  #second:target ~ .assembly { --edge: #709ef0; --trace: #438fa3; --metal: #91aed6; --fin: #2c539d; }
+  #running:target ~ .assembly { --edge: #8699d8; --trace: #bf8447; --metal: #edc898; --fin: #a37244; --light: #ffbf41; }
+  .selected, .low-profile { display: none; }
+  #second:target ~ .assembly .standard-cooler, #running:target ~ .assembly .standard-cooler { display: none; }
+  #second:target ~ .assembly .low-profile { display: inline; }
+  #running:target ~ .assembly .selected { display: inline; }
+</style>
+  <defs>
+    <linearGradient id="metal" x1="0" y1="1" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#2e4165" />
+      <stop offset="38%" stop-color="#9cb2d9" />
+      <stop offset="49%" stop-color="#c7cfe0" />
+      <stop offset="58%" stop-color="#586b86" />
+      <stop offset="100%" stop-color="#53688c" />
+    </linearGradient>
+    <linearGradient id="board" x1="0" y1="1" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#07172b" />
+      <stop offset="100%" stop-color="#132a4c" />
+    </linearGradient>
+    <linearGradient id="rail" x1="0" y1="1" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#223352" />
+      <stop offset="45%" stop-color="#455e8c" />
+      <stop offset="100%" stop-color="#192941" />
+    </linearGradient>
+  </defs>
+  <g id="running" />
+  <g id="second" />
+  <g class="assembly">
+    <path d="M150 0V12L169 20V33" stroke="var(--edge)" fill="none" stroke-width="1.3" />
+    <path class="standard-cooler" d="M169 33V43" stroke="var(--edge)" fill="none" stroke-width="1.3" />
+    <path class="selected" d="M150 0V12L169 20V33" stroke="#ffc447" stroke-width="2.6" fill="none" />
+    <g>
+      <polygon points="21.3,101.2 33.9,109.1 33.9,103.5 21.3,95.7" fill="#162640" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="33.9,109.1 59.6,103.2 59.6,97.7 33.9,103.5" fill="#1c2c43" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="21.3,95.7 47.0,89.9 59.6,97.7 33.9,103.5" fill="#3b4c69" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="183.9,64.1 196.6,72.0 196.6,66.5 183.9,58.6" fill="#162640" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="196.6,72.0 222.3,66.1 222.3,60.6 196.6,66.5" fill="#1c2c43" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="183.9,58.6 209.6,52.8 222.3,60.6 196.6,66.5" fill="#3b4c69" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="74.2,134.1 86.9,141.9 86.9,136.4 74.2,128.5" fill="#162640" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="86.9,141.9 112.6,136.0 112.6,130.5 86.9,136.4" fill="#1c2c43" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="74.2,128.5 99.9,122.7 112.6,130.5 86.9,136.4" fill="#3b4c69" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="236.9,97.0 249.5,104.8 249.5,99.3 236.9,91.5" fill="#162640" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="249.5,104.8 275.2,99.0 275.2,93.4 249.5,99.3" fill="#1c2c43" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="236.9,91.5 262.6,85.6 275.2,93.4 249.5,99.3" fill="#3b4c69" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="12.0,94.5 83.1,138.6 83.1,134.0 12.0,89.9" fill="#263e61" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="83.1,138.6 280.0,93.7 280.0,89.1 83.1,134.0" fill="#3c5277" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="12.0,89.9 208.9,45.0 280.0,89.1 83.1,134.0" fill="url(#metal)" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="17.6,90.6 83.9,131.8 83.9,121.7 17.6,80.5" fill="#182c4c" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="83.9,131.8 274.4,88.3 274.4,78.2 83.9,121.7" fill="#15273f" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="17.6,80.5 208.0,37.1 274.4,78.2 83.9,121.7" fill="url(#board)" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polyline points="90.4,127.6 93.6,121.3" fill="none" stroke="var(--edge)" stroke-width="1.1" />
+      <polyline points="96.8,126.1 100.0,119.8" fill="none" stroke="var(--edge)" stroke-width="1.1" />
+      <polyline points="103.2,124.6 106.4,118.4" fill="none" stroke="var(--edge)" stroke-width="1.1" />
+      <polyline points="109.6,123.2 112.8,116.9" fill="none" stroke="var(--edge)" stroke-width="1.1" />
+      <polyline points="116.0,121.7 119.2,115.4" fill="none" stroke="var(--edge)" stroke-width="1.1" />
+      <polyline points="122.5,120.2 125.7,114.0" fill="none" stroke="var(--edge)" stroke-width="1.1" />
+      <polyline points="128.9,118.8 132.1,112.5" fill="none" stroke="var(--edge)" stroke-width="1.1" />
+      <polyline points="135.3,117.3 138.5,111.1" fill="none" stroke="var(--edge)" stroke-width="1.1" />
+      <polyline points="141.7,115.8 144.9,109.6" fill="none" stroke="var(--edge)" stroke-width="1.1" />
+      <polyline points="148.1,114.4 151.4,108.1" fill="none" stroke="var(--edge)" stroke-width="1.1" />
+      <polyline points="154.6,112.9 157.8,106.7" fill="none" stroke="var(--edge)" stroke-width="1.1" />
+      <polyline points="161.0,111.5 164.2,105.2" fill="none" stroke="var(--edge)" stroke-width="1.1" />
+      <polyline points="167.4,110.0 170.6,103.7" fill="none" stroke="var(--edge)" stroke-width="1.1" />
+      <polyline points="173.8,108.5 177.0,102.3" fill="none" stroke="var(--edge)" stroke-width="1.1" />
+      <polyline points="180.2,107.1 183.4,100.8" fill="none" stroke="var(--edge)" stroke-width="1.1" />
+      <polyline points="186.7,105.6 189.9,99.3" fill="none" stroke="var(--edge)" stroke-width="1.1" />
+      <polyline points="193.1,104.1 196.3,97.9" fill="none" stroke="var(--edge)" stroke-width="1.1" />
+      <polyline points="199.5,102.7 202.7,96.4" fill="none" stroke="var(--edge)" stroke-width="1.1" />
+      <polyline points="205.9,101.2 209.1,94.9" fill="none" stroke="var(--edge)" stroke-width="1.1" />
+      <polyline points="212.3,99.7 215.6,93.5" fill="none" stroke="var(--edge)" stroke-width="1.1" />
+      <polyline points="218.8,98.3 222.0,92.0" fill="none" stroke="var(--edge)" stroke-width="1.1" />
+      <polyline points="225.2,96.8 228.4,90.6" fill="none" stroke="var(--edge)" stroke-width="1.1" />
+      <polyline points="231.6,95.3 234.8,89.1" fill="none" stroke="var(--edge)" stroke-width="1.1" />
+      <polyline points="238.0,93.9 241.2,87.6" fill="none" stroke="var(--edge)" stroke-width="1.1" />
+      <polyline points="244.4,92.4 247.7,86.2" fill="none" stroke="var(--edge)" stroke-width="1.1" />
+      <polyline points="250.9,91.0 254.1,84.7" fill="none" stroke="var(--edge)" stroke-width="1.1" />
+      <polyline points="257.3,89.5 260.5,83.2" fill="none" stroke="var(--edge)" stroke-width="1.1" />
+      <polygon points="13.1,79.5 83.4,123.1 83.4,121.3 13.1,77.7" fill="#4568ad" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="83.4,123.1 278.1,78.7 278.1,76.9 83.4,121.3" fill="#2c4b80" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="13.1,77.7 207.8,33.3 278.1,76.9 83.4,121.3" fill="url(#board)" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <ellipse cx="20.5" cy="78.5" rx="2.415" ry="1.302" fill="#060c18" stroke="var(--edge)" stroke-width=".68" />
+      <ellipse cx="204.6" cy="36.5" rx="2.415" ry="1.302" fill="#060c18" stroke="var(--edge)" stroke-width=".68" />
+      <ellipse cx="83.7" cy="117.7" rx="2.415" ry="1.302" fill="#060c18" stroke="var(--edge)" stroke-width=".68" />
+      <ellipse cx="267.8" cy="75.7" rx="2.415" ry="1.302" fill="#060c18" stroke="var(--edge)" stroke-width=".68" />
+      <polyline points="28.2,78.5 49.6,73.6 77.5,77.3 98.9,90.5" fill="none" stroke="var(--trace)" stroke-width="0.8" />
+      <polyline points="35.7,76.7 57.1,71.9 85.0,75.6 106.3,88.8" fill="none" stroke="var(--trace)" stroke-width="0.8" />
+      <polyline points="43.2,75.0 64.6,70.2 92.5,73.8 113.8,87.1" fill="none" stroke="var(--trace)" stroke-width="0.8" />
+      <polyline points="50.7,73.3 72.1,68.4 100.0,72.1 121.3,85.4" fill="none" stroke="var(--trace)" stroke-width="0.8" />
+      <polyline points="58.2,71.6 79.6,66.7 107.5,70.4 128.8,83.7" fill="none" stroke="var(--trace)" stroke-width="0.8" />
+      <polyline points="65.7,69.9 87.1,65.0 115.0,68.7 136.3,82.0" fill="none" stroke="var(--trace)" stroke-width="0.8" />
+      <polyline points="73.2,68.2 94.6,63.3 122.5,67.0 143.8,80.2" fill="none" stroke="var(--trace)" stroke-width="0.8" />
+      <polyline points="80.7,66.5 102.1,61.6 130.0,65.3 151.3,78.5" fill="none" stroke="var(--trace)" stroke-width="0.8" />
+      <polyline points="88.2,64.8 109.6,59.9 137.5,63.6 158.8,76.8" fill="none" stroke="var(--trace)" stroke-width="0.8" />
+      <polyline points="93.7,111.8 94.8,108.8 91.6,106.9 93.0,103.2" fill="none" stroke="var(--trace)" stroke-width="0.7" />
+      <ellipse cx="93.7" cy="111.8" rx="0.9774999999999999" ry="0.527" fill="#060c18" stroke="var(--edge)" stroke-width=".68" />
+      <polyline points="106.5,108.9 107.6,105.9 104.5,104.0 105.9,100.3" fill="none" stroke="var(--trace)" stroke-width="0.7" />
+      <ellipse cx="106.5" cy="108.9" rx="0.9774999999999999" ry="0.527" fill="#060c18" stroke="var(--edge)" stroke-width=".68" />
+      <polyline points="119.4,105.9 120.5,103.0 117.3,101.0 118.7,97.4" fill="none" stroke="var(--trace)" stroke-width="0.7" />
+      <ellipse cx="119.4" cy="105.9" rx="0.9774999999999999" ry="0.527" fill="#060c18" stroke="var(--edge)" stroke-width=".68" />
+      <polyline points="132.2,103.0 133.3,100.1 130.2,98.1 131.6,94.4" fill="none" stroke="var(--trace)" stroke-width="0.7" />
+      <ellipse cx="132.2" cy="103.0" rx="0.9774999999999999" ry="0.527" fill="#060c18" stroke="var(--edge)" stroke-width=".68" />
+      <polyline points="145.0,100.1 146.2,97.1 143.0,95.2 144.4,91.5" fill="none" stroke="var(--trace)" stroke-width="0.7" />
+      <ellipse cx="145.0" cy="100.1" rx="0.9774999999999999" ry="0.527" fill="#060c18" stroke="var(--edge)" stroke-width=".68" />
+      <polyline points="157.9,97.1 159.0,94.2 155.8,92.2 157.2,88.6" fill="none" stroke="var(--trace)" stroke-width="0.7" />
+      <ellipse cx="157.9" cy="97.1" rx="0.9774999999999999" ry="0.527" fill="#060c18" stroke="var(--edge)" stroke-width=".68" />
+      <polyline points="170.7,94.2 171.8,91.3 168.7,89.3 170.1,85.6" fill="none" stroke="var(--trace)" stroke-width="0.7" />
+      <ellipse cx="170.7" cy="94.2" rx="0.9774999999999999" ry="0.527" fill="#060c18" stroke="var(--edge)" stroke-width=".68" />
+      <polyline points="183.6,91.3 184.7,88.3 181.5,86.4 182.9,82.7" fill="none" stroke="var(--trace)" stroke-width="0.7" />
+      <ellipse cx="183.6" cy="91.3" rx="0.9774999999999999" ry="0.527" fill="#060c18" stroke="var(--edge)" stroke-width=".68" />
+      <polyline points="196.4,88.4 197.5,85.4 194.3,83.5 195.8,79.8" fill="none" stroke="var(--trace)" stroke-width="0.7" />
+      <ellipse cx="196.4" cy="88.4" rx="0.9774999999999999" ry="0.527" fill="#060c18" stroke="var(--edge)" stroke-width=".68" />
+      <polyline points="209.2,85.4 210.3,82.5 207.2,80.5 208.6,76.9" fill="none" stroke="var(--trace)" stroke-width="0.7" />
+      <ellipse cx="209.2" cy="85.4" rx="0.9774999999999999" ry="0.527" fill="#060c18" stroke="var(--edge)" stroke-width=".68" />
+      <polyline points="222.1,82.5 223.2,79.6 220.0,77.6 221.4,73.9" fill="none" stroke="var(--trace)" stroke-width="0.7" />
+      <ellipse cx="222.1" cy="82.5" rx="0.9774999999999999" ry="0.527" fill="#060c18" stroke="var(--edge)" stroke-width=".68" />
+      <polyline points="234.9,79.6 236.0,76.6 232.9,74.7 234.3,71.0" fill="none" stroke="var(--trace)" stroke-width="0.7" />
+      <ellipse cx="234.9" cy="79.6" rx="0.9774999999999999" ry="0.527" fill="#060c18" stroke="var(--edge)" stroke-width=".68" />
+      <polygon points="36.2,80.7 46.5,87.0 46.5,83.3 36.2,77.0" fill="#14243e" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="46.5,87.0 71.1,81.4 71.1,77.7 46.5,83.3" fill="#0a1523" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="36.2,77.0 60.8,71.4 71.1,77.7 46.5,83.3" fill="#27374f" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polyline points="49.7,84.9 51.2,87.2" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <polyline points="53.9,83.9 55.5,86.2" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <polyline points="58.2,83.0 59.8,85.2" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <polyline points="62.5,82.0 64.1,84.3" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <polyline points="66.8,81.0 68.4,83.3" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <polygon points="53.8,90.7 64.1,97.1 64.1,93.4 53.8,87.0" fill="#14243e" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="64.1,97.1 88.7,91.5 88.7,87.8 64.1,93.4" fill="#0a1523" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="53.8,87.0 78.5,81.4 88.7,87.8 64.1,93.4" fill="#27374f" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polyline points="67.3,95.0 68.9,97.2" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <polyline points="71.6,94.0 73.2,96.3" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <polyline points="75.9,93.0 77.5,95.3" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <polyline points="80.2,92.0 81.7,94.3" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <polyline points="84.4,91.1 86.0,93.3" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <polygon points="70.4,101.0 80.7,107.4 80.7,103.7 70.4,97.3" fill="#14243e" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="80.7,107.4 105.3,101.8 105.3,98.1 80.7,103.7" fill="#0a1523" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="70.4,97.3 95.0,91.7 105.3,98.1 80.7,103.7" fill="#27374f" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polyline points="83.9,105.3 85.5,107.5" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <polyline points="88.2,104.3 89.8,106.5" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <polyline points="92.5,103.3 94.1,105.6" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <polyline points="96.8,102.3 98.3,104.6" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <polyline points="101.0,101.3 102.6,103.6" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <polygon points="175.0,52.4 185.2,58.7 185.2,55.1 175.0,48.7" fill="#14243e" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="185.2,58.7 209.8,53.1 209.8,49.4 185.2,55.1" fill="#0a1523" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="175.0,48.7 199.6,43.1 209.8,49.4 185.2,55.1" fill="#27374f" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polyline points="188.4,56.6 190.0,58.9" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <polyline points="192.7,55.6 194.3,57.9" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <polyline points="197.0,54.7 198.6,56.9" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <polyline points="201.3,53.7 202.8,56.0" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <polyline points="205.6,52.7 207.1,55.0" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <polygon points="192.3,63.1 202.6,69.5 202.6,65.8 192.3,59.5" fill="#14243e" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="202.6,69.5 227.2,63.9 227.2,60.2 202.6,65.8" fill="#0a1523" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="192.3,59.5 216.9,53.9 227.2,60.2 202.6,65.8" fill="#27374f" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polyline points="205.8,67.4 207.4,69.7" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <polyline points="210.1,66.4 211.7,68.7" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <polyline points="214.4,65.5 215.9,67.7" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <polyline points="218.7,64.5 220.2,66.7" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <polyline points="222.9,63.5 224.5,65.8" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <polygon points="209.7,73.9 220.0,80.3 220.0,76.6 209.7,70.2" fill="#14243e" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="220.0,80.3 244.6,74.7 244.6,71.0 220.0,76.6" fill="#0a1523" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="209.7,70.2 234.3,64.6 244.6,71.0 220.0,76.6" fill="#27374f" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polyline points="223.2,78.2 224.8,80.4" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <polyline points="227.5,77.2 229.1,79.5" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <polyline points="231.8,76.2 233.3,78.5" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <polyline points="236.0,75.3 237.6,77.5" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <polyline points="240.3,74.3 241.9,76.5" fill="none" stroke="var(--metal)" stroke-width="0.9" />
+      <g class="standard-cooler" stroke-linejoin="round">
+        <!-- One mounting plate with seven parallel fins, drawn from back to front. -->
+        <g stroke="var(--edge)" stroke-width="0.72">
+          <polygon points="77.07,73.80 116.57,98.30 116.57,95.54 77.07,71.04" fill="#3e5277" />
+          <polygon points="116.57,98.30 204.31,78.30 204.31,75.54 116.57,95.54" fill="#445370" />
+          <polygon points="77.07,71.04 164.81,51.04 204.31,75.54 116.57,95.54" fill="url(#metal)" />
+        </g>
+        <g stroke="var(--metal)" stroke-width="0.46">
+          <g id="standard-fin">
+            <polygon points="82.65,71.78 84.39,72.86 84.39,59.06 82.65,57.98" fill="#29394f" />
+            <polygon points="84.39,72.86 165.71,54.32 165.71,40.52 84.39,59.06" fill="var(--fin)" />
+            <polygon points="82.65,57.98 163.97,39.44 165.71,40.52 84.39,59.06" fill="var(--metal)" />
+          </g>
+          <use href="#standard-fin" transform="translate(5.53 3.43)" />
+          <use href="#standard-fin" transform="translate(11.06 6.86)" />
+          <use href="#standard-fin" transform="translate(16.59 10.29)" />
+          <use href="#standard-fin" transform="translate(22.12 13.72)" />
+          <use href="#standard-fin" transform="translate(27.65 17.15)" />
+          <use href="#standard-fin" transform="translate(33.18 20.58)" />
+        </g>
+      </g>
+      <g class="low-profile">
+        <polygon points="70.1,74.0 111.2,99.5 111.2,94.0 70.1,68.5" fill="#243e65" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+        <polygon points="111.2,99.5 205.4,78.1 205.4,72.5 111.2,94.0" fill="#354a71" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+        <polygon points="70.1,68.5 164.3,47.1 205.4,72.5 111.2,94.0" fill="url(#metal)" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+        <polygon points="73.9,69.0 111.0,92.0 111.0,83.8 73.9,60.7" fill="#4c6283" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="111.0,92.0 113.1,91.6 113.1,83.3 111.0,83.8" fill="var(--fin)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="73.9,60.7 76.0,60.2 113.1,83.3 111.0,83.8" fill="var(--metal)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="78.9,67.9 116.0,90.9 116.0,82.6 78.9,59.6" fill="#4c6283" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="116.0,90.9 118.2,90.4 118.2,82.1 116.0,82.6" fill="var(--fin)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="78.9,59.6 81.0,59.1 118.2,82.1 116.0,82.6" fill="var(--metal)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="83.9,66.7 121.0,89.8 121.0,81.5 83.9,58.4" fill="#4c6283" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="121.0,89.8 123.2,89.3 123.2,81.0 121.0,81.5" fill="var(--fin)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="83.9,58.4 86.1,58.0 123.2,81.0 121.0,81.5" fill="var(--metal)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="88.9,65.6 126.1,88.6 126.1,80.3 88.9,57.3" fill="#4c6283" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="126.1,88.6 128.2,88.1 128.2,79.8 126.1,80.3" fill="var(--fin)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="88.9,57.3 91.1,56.8 128.2,79.8 126.1,80.3" fill="var(--metal)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="94.0,64.4 131.1,87.5 131.1,79.2 94.0,56.1" fill="#4c6283" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="131.1,87.5 133.2,87.0 133.2,78.7 131.1,79.2" fill="var(--fin)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="94.0,56.1 96.1,55.7 133.2,78.7 131.1,79.2" fill="var(--metal)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="99.0,63.3 136.1,86.3 136.1,78.0 99.0,55.0" fill="#4c6283" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="136.1,86.3 138.3,85.8 138.3,77.5 136.1,78.0" fill="var(--fin)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="99.0,55.0 101.1,54.5 138.3,77.5 136.1,78.0" fill="var(--metal)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="104.0,62.1 141.2,85.2 141.2,76.9 104.0,53.9" fill="#4c6283" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="141.2,85.2 143.3,84.7 143.3,76.4 141.2,76.9" fill="var(--fin)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="104.0,53.9 106.2,53.4 143.3,76.4 141.2,76.9" fill="var(--metal)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="109.1,61.0 146.2,84.0 146.2,75.7 109.1,52.7" fill="#4c6283" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="146.2,84.0 148.3,83.5 148.3,75.3 146.2,75.7" fill="var(--fin)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="109.1,52.7 111.2,52.2 148.3,75.3 146.2,75.7" fill="var(--metal)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="114.1,59.8 151.2,82.9 151.2,74.6 114.1,51.6" fill="#4c6283" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="151.2,82.9 153.4,82.4 153.4,74.1 151.2,74.6" fill="var(--fin)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="114.1,51.6 116.2,51.1 153.4,74.1 151.2,74.6" fill="var(--metal)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="119.1,58.7 156.3,81.7 156.3,73.4 119.1,50.4" fill="#4c6283" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="156.3,81.7 158.4,81.2 158.4,73.0 156.3,73.4" fill="var(--fin)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="119.1,50.4 121.3,49.9 158.4,73.0 156.3,73.4" fill="var(--metal)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="124.2,57.5 161.3,80.6 161.3,72.3 124.2,49.3" fill="#4c6283" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="161.3,80.6 163.4,80.1 163.4,71.8 161.3,72.3" fill="var(--fin)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="124.2,49.3 126.3,48.8 163.4,71.8 161.3,72.3" fill="var(--metal)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="129.2,56.4 166.3,79.4 166.3,71.2 129.2,48.1" fill="#4c6283" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="166.3,79.4 168.4,78.9 168.4,70.7 166.3,71.2" fill="var(--fin)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="129.2,48.1 131.3,47.6 168.4,70.7 166.3,71.2" fill="var(--metal)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="134.2,55.3 171.3,78.3 171.3,70.0 134.2,47.0" fill="#4c6283" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="171.3,78.3 173.5,77.8 173.5,69.5 171.3,70.0" fill="var(--fin)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="134.2,47.0 136.3,46.5 173.5,69.5 171.3,70.0" fill="var(--metal)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="139.2,54.1 176.4,77.1 176.4,68.9 139.2,45.8" fill="#4c6283" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="176.4,77.1 178.5,76.6 178.5,68.4 176.4,68.9" fill="var(--fin)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="139.2,45.8 141.4,45.3 178.5,68.4 176.4,68.9" fill="var(--metal)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="144.3,53.0 181.4,76.0 181.4,67.7 144.3,44.7" fill="#4c6283" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="181.4,76.0 183.5,75.5 183.5,67.2 181.4,67.7" fill="var(--fin)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="144.3,44.7 146.4,44.2 183.5,67.2 181.4,67.7" fill="var(--metal)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="149.3,51.8 186.4,74.8 186.4,66.6 149.3,43.5" fill="#4c6283" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="186.4,74.8 188.6,74.4 188.6,66.1 186.4,66.6" fill="var(--fin)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="149.3,43.5 151.4,43.0 188.6,66.1 186.4,66.6" fill="var(--metal)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="154.3,50.7 191.5,73.7 191.5,65.4 154.3,42.4" fill="#4c6283" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="191.5,73.7 193.6,73.2 193.6,64.9 191.5,65.4" fill="var(--fin)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="154.3,42.4 156.5,41.9 193.6,64.9 191.5,65.4" fill="var(--metal)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="159.4,49.5 196.5,72.6 196.5,64.3 159.4,41.2" fill="#4c6283" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="196.5,72.6 198.6,72.1 198.6,63.8 196.5,64.3" fill="var(--fin)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polygon points="159.4,41.2 161.5,40.8 198.6,63.8 196.5,64.3" fill="var(--metal)" stroke="var(--edge)" stroke-width="0.5" stroke-linejoin="round" />
+        <polyline points="75.1,69.7 73.5,66.9 170.8,44.6 173.6,47.3" fill="none" stroke="#90b8dc" stroke-width="1.9" />
+        <polyline points="86.2,76.6 84.5,73.7 181.9,51.5 184.6,54.2" fill="none" stroke="#90b8dc" stroke-width="1.9" />
+        <polyline points="97.2,83.5 95.6,80.6 193.0,58.4 195.7,61.0" fill="none" stroke="#90b8dc" stroke-width="1.9" />
+      </g>
+      <g class="selected">
+        <polygon points="116.4,62.8 158.3,88.8 158.3,85.1 116.4,59.1" fill="#293f6d" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+        <polygon points="158.3,88.8 204.3,78.3 204.3,74.6 158.3,85.1" fill="#37476c" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+        <polygon points="116.4,59.1 162.4,48.6 204.3,74.6 158.3,85.1" fill="url(#metal)" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+        <polygon points="120.2,59.6 121.3,60.4 121.3,36.4 120.2,35.7" fill="#4d5074" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="121.3,60.4 162.0,51.1 162.0,27.2 121.3,36.4" fill="var(--fin)" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="120.2,35.7 160.8,26.4 162.0,27.2 121.3,36.4" fill="var(--metal)" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="123.5,61.7 124.7,62.4 124.7,38.5 123.5,37.8" fill="#4d5074" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="124.7,62.4 165.3,53.2 165.3,29.2 124.7,38.5" fill="var(--fin)" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="123.5,37.8 164.1,28.5 165.3,29.2 124.7,38.5" fill="var(--metal)" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="126.8,63.7 128.0,64.5 128.0,40.6 126.8,39.8" fill="#4d5074" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="128.0,64.5 168.6,55.2 168.6,31.3 128.0,40.6" fill="var(--fin)" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="126.8,39.8 167.4,30.6 168.6,31.3 128.0,40.6" fill="var(--metal)" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="130.1,65.8 131.3,66.5 131.3,42.6 130.1,41.9" fill="#4d5074" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="131.3,66.5 171.9,57.3 171.9,33.3 131.3,42.6" fill="var(--fin)" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="130.1,41.9 170.8,32.6 171.9,33.3 131.3,42.6" fill="var(--metal)" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="133.4,67.9 134.6,68.6 134.6,44.7 133.4,43.9" fill="#4d5074" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="134.6,68.6 175.3,59.3 175.3,35.4 134.6,44.7" fill="var(--fin)" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="133.4,43.9 174.1,34.7 175.3,35.4 134.6,44.7" fill="var(--metal)" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="136.7,69.9 137.9,70.7 137.9,46.7 136.7,46.0" fill="#4d5074" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="137.9,70.7 178.6,61.4 178.6,37.5 137.9,46.7" fill="var(--fin)" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="136.7,46.0 177.4,36.7 178.6,37.5 137.9,46.7" fill="var(--metal)" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="140.1,72.0 141.2,72.7 141.2,48.8 140.1,48.1" fill="#4d5074" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="141.2,72.7 181.9,63.4 181.9,39.5 141.2,48.8" fill="var(--fin)" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="140.1,48.1 180.7,38.8 181.9,39.5 141.2,48.8" fill="var(--metal)" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="143.4,74.0 144.6,74.8 144.6,50.9 143.4,50.1" fill="#4d5074" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="144.6,74.8 185.2,65.5 185.2,41.6 144.6,50.9" fill="var(--fin)" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="143.4,50.1 184.0,40.8 185.2,41.6 144.6,50.9" fill="var(--metal)" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="146.7,76.1 147.9,76.8 147.9,52.9 146.7,52.2" fill="#4d5074" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="147.9,76.8 188.5,67.6 188.5,43.6 147.9,52.9" fill="var(--fin)" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="146.7,52.2 187.4,42.9 188.5,43.6 147.9,52.9" fill="var(--metal)" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="150.0,78.2 151.2,78.9 151.2,55.0 150.0,54.2" fill="#4d5074" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="151.2,78.9 191.9,69.6 191.9,45.7 151.2,55.0" fill="var(--fin)" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="150.0,54.2 190.7,45.0 191.9,45.7 151.2,55.0" fill="var(--metal)" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="153.3,80.2 154.5,80.9 154.5,57.0 153.3,56.3" fill="#4d5074" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="154.5,80.9 195.2,71.7 195.2,47.8 154.5,57.0" fill="var(--fin)" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="153.3,56.3 194.0,47.0 195.2,47.8 154.5,57.0" fill="var(--metal)" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="156.6,82.3 157.8,83.0 157.8,59.1 156.6,58.3" fill="#4d5074" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="157.8,83.0 198.5,73.7 198.5,49.8 157.8,59.1" fill="var(--fin)" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="156.6,58.3 197.3,49.1 198.5,49.8 157.8,59.1" fill="var(--metal)" stroke="var(--metal)" stroke-width="0.54" stroke-linejoin="round" />
+        <polygon points="73.8,79.9 103.8,98.5 103.8,94.9 73.8,76.2" fill="#203465" stroke="#71a3fb" stroke-width="0.72" stroke-linejoin="round" />
+        <polygon points="103.8,98.5 149.8,88.0 149.8,84.4 103.8,94.9" fill="#193c79" stroke="#71a3fb" stroke-width="0.72" stroke-linejoin="round" />
+        <polygon points="73.8,76.2 119.8,65.7 149.8,84.4 103.8,94.9" fill="#2053aa" stroke="#71a3fb" stroke-width="0.72" stroke-linejoin="round" />
+        <polygon points="85.2,77.0 105.0,89.2 105.0,86.5 85.2,74.2" fill="#e1a235" stroke="#ffda80" stroke-width="0.72" stroke-linejoin="round" />
+        <polygon points="105.0,89.2 136.0,82.2 136.0,79.4 105.0,86.5" fill="#cb8125" stroke="#ffda80" stroke-width="0.72" stroke-linejoin="round" />
+        <polygon points="85.2,74.2 116.2,67.1 136.0,79.4 105.0,86.5" fill="#ffba3d" stroke="#ffda80" stroke-width="0.72" stroke-linejoin="round" />
+        <polygon points="90.8,75.0 105.8,84.3 105.8,83.3 90.8,74.0" fill="#99722c" stroke="#ffdb80" stroke-width="0.72" stroke-linejoin="round" />
+        <polygon points="105.8,84.3 130.4,78.7 130.4,77.7 105.8,83.3" fill="#af782b" stroke="#ffdb80" stroke-width="0.72" stroke-linejoin="round" />
+        <polygon points="90.8,74.0 115.4,68.4 130.4,77.7 105.8,83.3" fill="#785226" stroke="#ffdb80" stroke-width="0.72" stroke-linejoin="round" />
+        <polyline points="78.0,74.8 74.1,73.7 66.7,75.0" fill="none" stroke="#edb952" stroke-width="0.9" />
+        <polyline points="107.3,93.4 110.4,98.1 117.9,99.6" fill="none" stroke="#edb952" stroke-width="0.9" />
+        <polyline points="83.4,73.6 79.4,72.5 72.0,73.8" fill="none" stroke="#edb952" stroke-width="0.9" />
+        <polyline points="112.6,92.2 115.8,96.9 123.2,98.3" fill="none" stroke="#edb952" stroke-width="0.9" />
+        <polyline points="88.7,72.4 84.8,71.3 77.3,72.6" fill="none" stroke="#edb952" stroke-width="0.9" />
+        <polyline points="118.0,91.0 121.1,95.7 128.6,97.1" fill="none" stroke="#edb952" stroke-width="0.9" />
+        <polyline points="94.1,71.1 90.1,70.1 82.7,71.4" fill="none" stroke="#edb952" stroke-width="0.9" />
+        <polyline points="123.3,89.7 126.5,94.5 133.9,95.9" fill="none" stroke="#edb952" stroke-width="0.9" />
+        <polyline points="99.4,69.9 95.5,68.9 88.1,70.2" fill="none" stroke="#edb952" stroke-width="0.9" />
+        <polyline points="128.7,88.5 131.8,93.2 139.3,94.7" fill="none" stroke="#edb952" stroke-width="0.9" />
+        <polyline points="104.8,68.7 100.8,67.6 93.4,68.9" fill="none" stroke="#edb952" stroke-width="0.9" />
+        <polyline points="134.0,87.3 137.2,92.0 144.6,93.5" fill="none" stroke="#edb952" stroke-width="0.9" />
+        <polyline points="110.1,67.5 106.2,66.4 98.8,67.7" fill="none" stroke="#edb952" stroke-width="0.9" />
+        <polyline points="139.4,86.1 142.5,90.8 150.0,92.2" fill="none" stroke="#edb952" stroke-width="0.9" />
+        <polyline points="115.5,66.3 111.5,65.2 104.1,66.5" fill="none" stroke="#edb952" stroke-width="0.9" />
+        <polyline points="144.7,84.9 147.9,89.6 155.3,91.0" fill="none" stroke="#edb952" stroke-width="0.9" />
+        <polyline points="102.8,70.6 96.5,69.5 96.8,69.9 90.5,66.0 143.0,54.0" fill="none" stroke="#ffcd60" stroke-width="2.1" />
+        <polyline points="111.8,77.6 126.8,93.7 150.2,93.7 166.2,89.2 171.0,89.8" fill="none" stroke="#e95738" stroke-width="5" />
+        <polyline points="112.5,78.1 126.8,93.7 150.2,93.7 166.2,89.2 171.0,89.8" fill="none" stroke="#44d1de" stroke-width="3.8" />
+        <polyline points="111.8,77.6 126.8,93.7 150.2,93.7 166.2,89.2 171.0,89.8" fill="none" stroke="#ffc849" stroke-width="2.0" />
+      </g>
+      <polygon points="128.8,99.5 136.7,104.4 136.7,100.8 128.8,95.9" fill="#111d30" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="136.7,104.4 210.5,87.6 210.5,83.9 136.7,100.8" fill="#17253b" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="128.8,95.9 202.6,79.0 210.5,83.9 136.7,100.8" fill="#24344d" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polyline points="134.7,95.7 140.2,99.1" fill="none" stroke="var(--light)" stroke-width="1.45" />
+      <polyline points="140.0,94.5 145.5,97.9" fill="none" stroke="var(--light)" stroke-width="1.45" />
+      <polyline points="145.4,93.2 150.9,96.7" fill="none" stroke="var(--light)" stroke-width="1.45" />
+      <polyline points="150.7,92.0 156.2,95.4" fill="none" stroke="var(--light)" stroke-width="1.45" />
+      <polyline points="156.1,90.8 161.6,94.2" fill="none" stroke="var(--light)" stroke-width="1.45" />
+      <polyline points="161.4,89.6 166.9,93.0" fill="none" stroke="var(--light)" stroke-width="1.45" />
+      <polyline points="166.8,88.4 172.3,91.8" fill="none" stroke="var(--light)" stroke-width="1.45" />
+      <polyline points="172.1,87.1 177.6,90.6" fill="none" stroke="var(--light)" stroke-width="1.45" />
+      <polyline points="177.5,85.9 183.0,89.3" fill="none" stroke="var(--light)" stroke-width="1.45" />
+      <polyline points="182.8,84.7 188.3,88.1" fill="none" stroke="var(--light)" stroke-width="1.45" />
+      <polyline points="188.2,83.5 193.7,86.9" fill="none" stroke="var(--light)" stroke-width="1.45" />
+      <polyline points="193.5,82.3 199.0,85.7" fill="none" stroke="var(--light)" stroke-width="1.45" />
+      <polyline points="198.9,81.0 204.4,84.5" fill="none" stroke="var(--light)" stroke-width="1.45" />
+      <polygon points="203.1,43.1 213.4,49.4 213.4,42.1 203.1,35.7" fill="#526383" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="213.4,49.4 219.8,48.0 219.8,40.6 213.4,42.1" fill="#425579" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="203.1,35.7 209.5,34.2 219.8,40.6 213.4,42.1" fill="url(#metal)" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="221.3,54.3 231.5,60.7 231.5,53.3 221.3,47.0" fill="#526383" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="231.5,60.7 238.0,59.2 238.0,51.9 231.5,53.3" fill="#425579" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="221.3,47.0 227.7,45.5 238.0,51.9 231.5,53.3" fill="url(#metal)" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="239.4,65.6 249.7,72.0 249.7,64.6 239.4,58.2" fill="#526383" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="249.7,72.0 256.1,70.5 256.1,63.1 249.7,64.6" fill="#425579" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+      <polygon points="239.4,58.2 245.9,56.8 256.1,63.1 249.7,64.6" fill="url(#metal)" stroke="var(--edge)" stroke-width="0.72" stroke-linejoin="round" />
+    </g>
+    <g class="selected">
+      <path d="M169 20L169 30L174 32" fill="none" stroke="#ffbe3e" stroke-width="2.4" />
+      <path d="M171 91L171 119L150 130V166" fill="none" stroke="#ed5631" stroke-width="7" />
+      <path d="M170 91L170 119L149 130V166" fill="none" stroke="#41bdd2" stroke-width="4.5" />
+      <path d="M172 91L172 120L151 131V166" fill="none" stroke="#ffd05c" stroke-width="3.2" />
+    </g>
+  </g>
+</svg>
